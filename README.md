@@ -1,4 +1,4 @@
-# Scooby-Doo-Speedrunners-Resource
+# Scooby-Doo Speedrunners Resource
 Scooby-Doo Speedrunners Resource
 
 Credits:
