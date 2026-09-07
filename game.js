@@ -23,7 +23,7 @@ cards.forEach(game => {
     front.classList.add("card-front");
 
     const frontImage = document.createElement("img");
-    frontImage.src = "images/" + game.image;
+    frontImage.src = "images/boxarts/" + game.image;
 
     front.appendChild(frontImage);
     inner.appendChild(front);

@@ -29,7 +29,6 @@ body {
     padding: 20px;
 }
 
-
 /* =========================
    MENU
    ========================= */
@@ -51,7 +50,7 @@ body {
 
 .game-header {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 300px 350px 1fr;
     gap: 30px;
     margin-bottom: 30px;
     text-align: left;
@@ -88,7 +87,8 @@ body {
 /* Game information */
 
 .game-info {
-    width: auto;
+    width: 350px;
+    height: 300px;
     margin: 0;
     text-align: left;
 }
@@ -98,10 +98,18 @@ body {
    RESOURCE BOXES
    ========================= */
 
-.resource-grid {
+.intro-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    text-align: left;
+}
+
+.resource-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
     text-align: left;
 }
 
@@ -128,22 +136,23 @@ a:hover {
     color: #80ccff;
 }
 
-
-/* =========================
-   START GAME BUTTON
-   ========================= */
-
-#start-game {
-    padding: 15px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    border: 2px solid var(--text);
-    border-radius: 8px;
-    background: var(--background);
-    color: var(--text);
+.site-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
 }
 
+.site-link img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.site-link span {
+    font-weight: bold;
+}
 
 /* =========================
    BOXART GRID
