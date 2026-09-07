@@ -1,7 +1,7 @@
 # Scooby-Doo-Website
-Scooby website
+Scooby-Doo Speedrunners Resource
 
 Credits:
 
-GameTDB: DS Box Arts
-LaunchBox Games Database: Other Box Arts
+- GameTDB: DS Box Arts
+- LaunchBox Games Database: Other Box Arts
