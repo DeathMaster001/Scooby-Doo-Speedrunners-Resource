@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scooby-Doo Speedrunners Resource</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
 </head>
 
 <body>
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html">Home</a>
+        <a href="/games.html">Games</a>
+        <a href="/about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction()
+        {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav")
+            {
+                x.className += " responsive";
+            }
+            else
+            {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
     <main class="page-container">
         <h1>Scooby-Doo Speedrunners Resource</h1>
         
@@ -15,7 +40,7 @@
 
             <!-- Boxart -->
             <div class="box game-cover">
-                <img src="../images/boxarts/sd-gba.png">
+                <img src="/images/boxarts/sd-gba.png" alt="Game Box Art">
             </div>
 
             <!-- Game Information -->
@@ -34,10 +59,10 @@
             <!-- Websites -->
             <div class="box game-site">
                 <a href="https://speedrun.com/sdtmp" class="site-link" target="_blank" rel="noopener">
-                <img src="../images/site-images/trophy.png" alt="Speedrun.com" width="48" height="48"> <span>Speedrun.com</span> </a>
+                <img src="/images/site-images/trophy.png" alt="Speedrun.com" width="48" height="48"> <span>Speedrun.com</span> </a>
 
-                <a href="https://tcrf.net/" class="site-link" target="_blank" rel="noopener">
-                <img src="../images/site-images/tcrf.png" alt="The Cutting Room Floor" width="48" height="48"> <span>The Cutting Room Floor</span> </a>
+                <a href="https://tcrf.net/Scooby-Doo_(Game_Boy_Advance)" class="site-link" target="_blank" rel="noopener">
+                <img src="/images/site-images/tcrf.png" alt="The Cutting Room Floor" width="48" height="48"> <span>The Cutting Room Floor</span> </a>
             </div>
 
         </section>
@@ -61,6 +86,8 @@
         </section>
 
     </main>
+
+    <script src="theme.js"></script>
 
 </body>
 </html>

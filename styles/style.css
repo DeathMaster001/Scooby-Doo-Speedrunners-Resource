@@ -71,12 +71,14 @@ body {
 /* Game boxart */
 
 .game-cover {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-cover img {
-    width: 250px;
-    height: 250px;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
 }
 
@@ -165,11 +167,6 @@ a:hover {
     justify-content: center;
 }
 
-
-/* =========================
-   FLIP CARDS
-   ========================= */
-
 .card {
     width: 250px;
     height: 250px;
@@ -191,16 +188,33 @@ a:hover {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-/* Boxart images */
-
 .card-front img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
     border: 3px solid var(--card-front-border);
     border-radius: 8px;
     box-sizing: border-box;
+}
+
+.card-front a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooby-Doo Speedrunners Resource</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html">Home</a>
+        <a href="/games.html">Games</a>
+        <a href="/about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction()
+        {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav")
+            {
+                x.className += " responsive";
+            }
+            else
+            {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <main class="page-container">
+        <h1>Scooby-Doo Speedrunners Resource</h1>
+        
+        <section class="game-header">
+
+            <!-- Boxart -->
+            <div class="box game-cover">
+                <img src="/images/boxarts/sdff-ds.png" alt="Game Box Art">
+            </div>
+
+            <!-- Game Information -->
+            <div class="box game-info">
+                <h2>Scooby-Doo! First Frights</h2>
+                <p>To Be Added</p>
+                <p>
+                    <strong>Developer:</strong> To Be Added<br>
+                    <strong>Publisher:</strong> To Be Added<br>
+                    <strong>Platform:</strong> Nintendo DS<br>
+                    <strong>Released (US):</strong> To Be Added<br>
+                    <strong>Released (EU):</strong> To Be Added
+                </p>
+            </div>
+            
+            <!-- Websites -->
+            <div class="box game-site">
+                <a href="https://speedrun.com/" class="site-link" target="_blank" rel="noopener">
+                <img src="/images/site-images/trophy.png" alt="Speedrun.com" width="48" height="48"> <span>Speedrun.com</span> </a>
+
+                <a href="https://tcrf.net/" class="site-link" target="_blank" rel="noopener">
+                <img src="/images/site-images/tcrf.png" alt="The Cutting Room Floor" width="48" height="48"> <span>The Cutting Room Floor</span> </a>
+            </div>
+
+        </section>
+
+        <!-- Guides -->
+        <section class="guide-box box">
+            <h2>Guides</h2>
+            <p>Speedrunning guides.</p>
+        </section>
+
+        <!-- Resources -->
+        <section class="guide-box box">
+            <h2>Resources</h2>
+            <p>Speedrunning resources.</p>
+        </section>
+
+        <!-- Videos -->
+        <section class="guide-box box">
+            <h2>Videos</h2>
+            <p>Video resources.</p>
+        </section>
+
+    </main>
+
+    <script src="theme.js"></script>
+
+</body>
+</html>
