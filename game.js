@@ -30,26 +30,26 @@ const boxarts = [
 const gameBoard = document.getElementById("boxarts");
 
 boxarts.forEach(game => {
-    const card = document.createElement("div");
-    card.classList.add("card");
+    const boxArt = document.createElement("div");
+    boxArt.classList.add("box-art");
 
-    const inner = document.createElement("div");
-    inner.classList.add("card-inner");
+    const boxArtInner = document.createElement("div");
+    boxArtInner.classList.add("box-art-inner");
 
-    const front = document.createElement("div");
-    front.classList.add("card-front");
+    const boxArtFront = document.createElement("div");
+    boxArtFront.classList.add("box-art-front");
 
     const link = document.createElement("a");
     link.href = game.page;
 
-    const frontImage = document.createElement("img");
-    frontImage.src = "images/boxarts/" + game.image;
-    frontImage.alt = "Game Box Art";
+    const boxArtImage = document.createElement("img");
+    boxArtImage.src = "images/boxarts/" + game.image;
+    boxArtImage.alt = "Game Box Art";
 
-    link.appendChild(frontImage);
-    front.appendChild(link);
-    inner.appendChild(front);
-    card.appendChild(inner);
+    link.appendChild(boxArtImage);
+    boxArtFront.appendChild(link);
+    boxArtInner.appendChild(boxArtFront);
+    boxArt.appendChild(boxArtInner);
 
-    gameBoard.appendChild(card);
+    gameBoard.appendChild(boxArt);
 });
