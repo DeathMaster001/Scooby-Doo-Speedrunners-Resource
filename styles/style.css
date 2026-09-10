@@ -84,6 +84,8 @@ body {
 
 .game-site {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Game information */
@@ -154,6 +156,11 @@ a:hover {
 
 .site-link span {
     font-weight: bold;
+}
+
+.note {
+    font-style: italic;
+    margin-top: auto;
 }
 
 /* =========================
