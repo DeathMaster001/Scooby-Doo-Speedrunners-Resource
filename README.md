@@ -3,5 +3,6 @@ Scooby-Doo Speedrunners Resource
 
 Credits:
 
-- GameTDB: DS Box Arts
-- LaunchBox Games Database: Other Box Arts
+- IMDB: Games Page Images.
+- GameTDB: DS Box Arts.
+- LaunchBox Games Database: Other Box Arts.

@@ -4,7 +4,11 @@ const boxarts = [
     { image: "sd2mu-gba.png", page: "games/gba/sd2mu-gba.html" },
     { image: "sdcc-gba.png", page: "games/gba/sdcc-gba.html" },
     { image: "sdmm-gba.png", page: "games/gba/sdmm-gba.html" },
-    { image: "sdu-gba.png", page: "games/gba/sdu-gba.html" },
+
+    //Multiple Platforms
+    { image: "sdu-series.png", page: "games/multiplatform/sdu.html" },
+    { image: "sdwww-series.png", page: "games/multiplatform/sdwww.html" },
+
 
     // GBC Games
     { image: "sdccc-gbc.png", page: "games/gbc/sdccc-gbc.html" },
@@ -13,18 +17,12 @@ const boxarts = [
     { image: "sdccc-n64.png", page: "games/n64/sdccc-n64.html" },
 
     // DS Games
-    { image: "sdu-ds.png", page: "games/ds/sdu-ds.html" },
-    { image: "sdff-ds.png", page: "games/ds/sdff-ds.html" },
-    { image: "sdss-ds.png", page: "games/ds/sdss-ds.html" },
-    { image: "sdwww-ds.png", page: "games/ds/sdwww-ds.html" },
+    { image: "sdff-nds.png", page: "games/nds/sdff-nds.html" },
+    { image: "sdss-nds.png", page: "games/nds/sdss-nds.html" },
+    { image: "sdwww-nds.png", page: "games/nds/sdwww-nds.html" },
 
     // PSP Games
-    { image: "sdwww-psp.png", page: "games/psp/sdwww-psp.html" }
-
-    //Multiple Platforms
-    // { image: "sdu-gcn.png", page: "games/multiple-platforms/sdu-gcn.html" }
-    // { image: "sdmm-gcn.png", page: "games/multiple-platforms/sdmm-gcn.html" }
-    // { image: "sdn100f-gcn.png", page: "games/multiple-platforms/sdn100f-gcn.html" }
+    { image: "sdwww-psp.png", page: "games/psp/sdwww-psp.html" },
 ];
 
 const gameBoard = document.getElementById("boxarts");

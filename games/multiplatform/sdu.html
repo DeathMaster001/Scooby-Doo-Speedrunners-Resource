@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooby-Doo Speedrunners Resource</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/navbar.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="../../index.html">Home</a>
+        <a href="../../games.html">Games</a>
+        <a href="../../about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction()
+        {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav")
+            {
+                x.className += " responsive";
+            }
+            else
+            {
+                x.className = "topnav";
+            }
+        }
+
+        const images = [
+            {
+                src: "../../images/boxarts/sdu-gcn.png",
+                alt: "Scooby-Doo! Unmasked GameCube Box Art",
+                caption: "GameCube Box Art"
+            },
+            {
+                src: "../../images/boxarts/sdu-ps2.png",
+                alt: "Scooby-Doo! Unmasked PlayStation 2 Box Art",
+                caption: "PlayStation 2 Box Art"
+            },
+            {
+                src: "../../images/boxarts/sdu-xbox.png",
+                alt: "Scooby-Doo! Unmasked Xbox Box Art",
+                caption: "Xbox Box Art"
+            },
+            {
+                src: "../../images/boxarts/sdu-gba.png",
+                alt: "Scooby-Doo! Unmasked Game Boy Advance Box Art",
+                caption: "Game Boy Advance Box Art"
+            },
+            {
+                src: "../../images/boxarts/sdu-nds.png",
+                alt: "Scooby-Doo! Unmasked Nintendo DS Box Art",
+                caption: "Nintendo DS Box Art"
+            }
+        ];
+
+        let currentImage = 0;
+
+        function changeImage(direction) {
+            currentImage = (currentImage + direction + images.length) % images.length;
+
+            const image = document.getElementById("gallery-image");
+            const caption = document.getElementById("gallery-caption");
+
+            image.src = images[currentImage].src;
+            image.alt = images[currentImage].alt;
+            caption.textContent = images[currentImage].caption;
+        }
+    </script>
+
+    <main class="page-container">
+        <h1>Scooby-Doo Speedrunners Resource</h1>
+        <h2>Scooby-Doo! Unmasked</h2>
+        
+        <section class="game-header">
+
+            <!-- Boxart -->
+            <div class="box game-cover">
+
+                <div class="gallery-content">
+
+                    <img id="gallery-image"
+                        src="../../images/boxarts/sdu-gcn.png"
+                        alt="Scooby-Doo! Unmasked GameCube Box Art">
+
+                    <div class="gallery-caption">
+                        <button class="gallery-arrow" onclick="changeImage(-1)">←</button>
+
+                        <span id="gallery-caption">GameCube Box Art</span>
+
+                        <button class="gallery-arrow" onclick="changeImage(1)">→</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Game Information -->
+            <div class="game-info">
+                <div class="info-box">
+                    <h3>Developer / Publisher</h3>
+                    <p>Artificial Mind and Movement<br><br>
+                        THQ
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Platforms</h3>
+                    <p>
+                        Nintendo DS<br>
+                        Game Boy Advance<br>
+                        GameCube<br>
+                        PlayStation 2<br>
+                        Xbox
+                    </p>
+                </div>
+
+                <div class="info-box release-dates">
+                    <h3>Release Dates</h3>
+                    <p>
+                        <strong>Xbox</strong><br>
+                        NA: September 12, 2005<br>
+                        PAL: September 16, 2005<br><br>
+
+                        <strong>GBA, GameCube, PS2</strong><br>
+                        NA: September 12, 2005<br>
+                        PAL: September 23, 2005<br><br>
+
+                        <strong>Nintendo DS</strong><br>
+                        NA: October 18, 2005<br>
+                        PAL: November 11, 2005
+                    </p>
+                </div>
+
+            </div>
+            
+            <!-- Websites -->
+            <div class="box game-site">
+                <a href="https://speedrun.com/scooby_doo_unmasked_gba" class="site-link" target="_blank" rel="noopener">
+                <img src="../../images/site-images/trophy.png" alt="Speedrun.com" width="48" height="48"> <span>Speedrun.com</span> </a>
+
+                <a href="https://tcrf.net/Scooby-Doo!_Unmasked_(Game_Boy_Advance)" class="site-link" target="_blank" rel="noopener">
+                <img src="../../images/site-images/tcrf.png" alt="The Cutting Room Floor" width="48" height="48"> <span>The Cutting Room Floor</span> </a>
+
+                <p class="note"><strong>Note</strong>: If any links above aren't available, the links maybe broken or the pages may not exist yet.</p>
+            </div>
+
+        </section>
+
+        <!-- Guides -->
+        <section class="guide-box box">
+            <h2>Guides</h2>
+            <p>To be added.</p>
+        </section>
+
+        <!-- Resources -->
+        <section class="guide-box box">
+            <h2>Resources</h2>
+            <p>To be added.</p>
+        </section>
+
+        <!-- Videos -->
+        <section class="guide-box box">
+            <h2>Videos</h2>
+            <p>To be added.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>

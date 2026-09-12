@@ -31,6 +31,32 @@
                 x.className = "topnav";
             }
         }
+
+        const images = [
+            {
+                src: "../../images/boxarts/sdwww-psp.png",
+                alt: "Scooby-Doo! Unmasked PlayStation Portable Box Art",
+                caption: "PlayStation Portable Box Art"
+            },
+            {
+                src: "../../images/boxarts/sdwww-nds.png",
+                alt: "Scooby-Doo! Who's Watching Who? Nintendo DS Box Art",
+                caption: "Nintendo DS Box Art"
+            }
+        ];
+
+        let currentImage = 0;
+
+        function changeImage(direction) {
+            currentImage = (currentImage + direction + images.length) % images.length;
+
+            const image = document.getElementById("gallery-image");
+            const caption = document.getElementById("gallery-caption");
+
+            image.src = images[currentImage].src;
+            image.alt = images[currentImage].alt;
+            caption.textContent = images[currentImage].caption;
+        }
     </script>
 
     <main class="page-container">
@@ -40,20 +66,55 @@
 
             <!-- Boxart -->
             <div class="box game-cover">
-                <img src="../../images/boxarts/sdu-gba.png" alt="Game Box Art">
+
+                <div class="gallery-content">
+
+                    <img id="gallery-image"
+                        src="../../images/boxarts/sdwww-psp.png"
+                        alt="Scooby-Doo! Who's Watching Who? PlayStation Portable Box Art">
+
+                    <div class="gallery-caption">
+                        <button class="gallery-arrow" onclick="changeImage(-1)">←</button>
+
+                        <span id="gallery-caption">PlayStation Portable Box Art</span>
+
+                        <button class="gallery-arrow" onclick="changeImage(1)">→</button>
+                    </div>
+
+                </div>
+
             </div>
 
             <!-- Game Information -->
-            <div class="box game-info">
-                <h2>Scooby-Doo! Unmasked</h2>
-                <p>To Be Added</p>
-                <p>
-                    <strong>Developer:</strong> To Be Added<br>
-                    <strong>Publisher:</strong> To Be Added<br>
-                    <strong>Platform:</strong> Game Boy Advance<br>
-                    <strong>Released (US):</strong> To Be Added<br>
-                    <strong>Released (EU):</strong> To Be Added
-                </p>
+            <div class="game-info">
+                <div class="info-box">
+                    <h3>Developer / Publisher</h3>
+                    <p>To be added<br><br>
+                        To be added
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Platforms</h3>
+                    <p>
+                        PlayStation Portable<br>
+                        Nintendo DS
+                    </p>
+                </div>
+
+                <div class="info-box release-dates">
+                    <h3>Release Dates</h3>
+                    <p>
+                        <strong>PlayStation Portable</strong><br>
+                        NA: To be added<br>
+                        PAL: To be added<br><br>
+
+                        <strong>Nintendo DS</strong><br>
+                        NA: To be added<br>
+                        PAL: To be added
+                    </p>
+                </div>
+
             </div>
             
             <!-- Websites -->
