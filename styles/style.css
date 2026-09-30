@@ -8,6 +8,10 @@
     --box-art-border: #f5f5f5;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 
 /* =========================
    GLOBAL / BASE STYLES
