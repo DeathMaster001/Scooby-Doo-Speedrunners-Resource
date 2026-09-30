@@ -157,11 +157,13 @@ a:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
+    gap: 10;
+    align-items: center;
 }
 
 .game-info {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     width: 100%;
 }
