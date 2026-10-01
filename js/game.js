@@ -1,5 +1,8 @@
 const boxarts = [
-    //Multiple Platforms
+    //Ordered by Release Date
+    { image: "sdccc-series.png", page: "games/multiplatform/sdccc.html" },
+    { image: "sdcc-series.png", page: "games/multiplatform/sdcc.html" },
+    { image: "sd2mu-series.png", page: "games/gba/sd2mu.html" },
     { image: "sdu-series.png", page: "games/multiplatform/sdu.html" },
     { image: "sdwww-series.png", page: "games/multiplatform/sdwww.html" },
     { image: "sdff-series.png", page: "games/multiplatform/sdff.html" },
@@ -9,16 +12,7 @@ const boxarts = [
     { image: "sd-gba.png", page: "games/gba/sd-gba.html" },
     { image: "sd2mu-gba.png", page: "games/gba/sd2mu-gba.html" },
     { image: "sdcc-gba.png", page: "games/gba/sdcc-gba.html" },
-    { image: "sdmm-gba.png", page: "games/gba/sdmm-gba.html" },
-
-    // GBC Games
-    { image: "sdccc-gbc.png", page: "games/gbc/sdccc-gbc.html" },
-
-    // N64 Games
-    { image: "sdccc-n64.png", page: "games/n64/sdccc-n64.html" },
-
-    // DS Games
-    { image: "sdss-nds.png", page: "games/nds/sdss-nds.html" }
+    { image: "sdmm-gba.png", page: "games/gba/sdmm-gba.html" }
 ];
 
 const gameBoard = document.getElementById("boxarts");
