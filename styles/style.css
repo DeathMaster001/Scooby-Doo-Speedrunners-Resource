@@ -26,6 +26,14 @@ body {
     margin: 0;
 }
 
+.welcome-image {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
 
 /* =========================
    LINKS

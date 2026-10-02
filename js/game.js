@@ -1,18 +1,15 @@
 const boxarts = [
     //Ordered by Release Date
-    { image: "sdccc-series.png", page: "games/multiplatform/sdccc.html" },
-    { image: "sdcc-series.png", page: "games/multiplatform/sdcc.html" },
-    { image: "sd2mu-series.png", page: "games/gba/sd2mu.html" },
-    { image: "sdu-series.png", page: "games/multiplatform/sdu.html" },
-    { image: "sdwww-series.png", page: "games/multiplatform/sdwww.html" },
-    { image: "sdff-series.png", page: "games/multiplatform/sdff.html" },
-    { image: "sdss-series.png", page: "games/multiplatform/sdss.html" },
-
-    // GBA Games
-    { image: "sd-gba.png", page: "games/gba/sd-gba.html" },
-    { image: "sd2mu-gba.png", page: "games/gba/sd2mu-gba.html" },
-    { image: "sdcc-gba.png", page: "games/gba/sdcc-gba.html" },
-    { image: "sdmm-gba.png", page: "games/gba/sdmm-gba.html" }
+    { image: "sdccc-series.png", page: "games/sdccc.html" },
+    { image: "sdcc-series.png", page: "games/sdcc.html" },
+    { image: "sd-gba.png", page: "games/sd.html" },
+    { image: "sdn100f-series.png", page: "games/sdn100f.html" },
+    { image: "sdmm-series.png", page: "games/sdmm.html" },
+    { image: "sd2mu-series.png", page: "games/sd2mu.html" },
+    { image: "sdu-series.png", page: "games/sdu.html" },
+    { image: "sdwww-series.png", page: "games/sdwww.html" },
+    { image: "sdff-series.png", page: "games/sdff.html" },
+    { image: "sdss-series.png", page: "games/sdss.html" }
 ];
 
 const gameBoard = document.getElementById("boxarts");

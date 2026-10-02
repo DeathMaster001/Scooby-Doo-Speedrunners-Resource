@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooby-Doo Speedrunners Resource</title>
+    <link rel="icon" type="image/png" href="../images/site-images/scooby-doo.png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="nav-left">
+            <a href="../index.html">Home</a>
+            <a href="../games.html">Games</a>
+            <a href="../about.html">About</a>
+        </div>
+
+        <div class="nav-title">
+            Scooby-Doo Speedrunners Resource
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <main class="page-container">
+        <h2>Scooby-Doo! Mystery Mayhem</h2>
+        
+        <section class="game-header">
+
+            <!-- Boxart -->
+            <div class="box game-cover">
+                <div class="gallery-content">
+                    <img id="gallery-image"
+                        src="../images/boxarts/sdmm-gcn.png"
+                        alt="Scooby-Doo! Mystery Mayhem GameCube Box Art">
+
+                    <div class="gallery-caption">
+                        <button class="gallery-arrow" onclick="changeImage(-1)">←</button>
+
+                        <span id="gallery-caption">GameCube Box Art</span>
+
+                        <button class="gallery-arrow" onclick="changeImage(1)">→</button>
+                    </div>
+
+                    <!-- Gallery Data -->
+                    <div hidden>
+                        <img class="gallery-image-data"
+                            src="../images/boxarts/sdmm-gcn.png"
+                            alt="Scooby-Doo! Mystery Mayhem GameCube Box Art"
+                            data-caption="GameCube Box Art">
+
+                        <img class="gallery-image-data"
+                            src="../images/boxarts/sdmm-ps2.png"
+                            alt="Scooby-Doo! Mystery Mayhem PlayStation 2 Box Art"
+                            data-caption="PlayStation 2 Box Art">
+
+                        <img class="gallery-image-data"
+                            src="../images/boxarts/sdmm-xbox.png"
+                            alt="Scooby-Doo! Mystery Mayhem Xbox Box Art"
+                            data-caption="Xbox Box Art">
+
+                        <img class="gallery-image-data"
+                            src="../images/boxarts/sdmm-gba.png"
+                            alt="Scooby-Doo! Mystery Mayhem Game Boy Advance Box Art"
+                            data-caption="Game Boy Advance Box Art">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Information -->
+            <div class="game-info">
+                <div class="info-box">
+                    <h3>Developer</h3>
+                    <p>
+                        Artificial Mind and Movement
+                    </p>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Publisher</h3>
+                    <p>
+                        THQ
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Game Engine</h3>
+                    <p>
+                        RenderWare
+                    </p>
+                </div>
+
+
+                <div class="info-box">
+                    <h3>Platforms</h3>
+                    <p>
+                        GameCube<br>
+                        PlayStation 2<br>
+                        Xbox<br>
+                        Game Boy Advance
+                    </p>
+                </div>
+
+                <div class="info-box release-dates">
+                    <h3>Release Dates</h3>
+                    <p>
+                        <strong>Game Boy Advance</strong><br>
+                        NA: September 10, 2003<br>
+                        PAL: November 7, 2003<br><br>
+
+                        <strong>GameCube, PS2, Xbox</strong><br>
+                        NA: March 2, 2004<br>
+                        PAL: March 26, 2004
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Websites -->
+            <div class="box game-site">
+                <!--- Speedrun.com -->
+                <a href="https://speedrun.com/" class="site-link" target="_blank" rel="noopener">
+                <img src="../images/site-images/trophy.png" alt="Speedrun.com" width="48" height="48"> <span>Speedrun.com</span> </a>
+
+                <span>
+                    <a href="https://www.speedrun.com/scooby_doo_mystery_mayhem" target="_blank" rel="noopener">Console</a><br>
+                    <a href="https://www.speedrun.com/mmgba" target="_blank" rel="noopener">Game Boy Advance</a>
+                </span>
+                <br>
+
+                <!--- TCRF -->
+                <a href="https://tcrf.net/" class="site-link" target="_blank" rel="noopener">
+                <img src="../images/site-images/tcrf.png" alt="The Cutting Room Floor" width="48" height="48"> <span>The Cutting Room Floor</span> </a>
+
+                <span>
+                    <a href="https://tcrf.net/Scooby-Doo!_Mystery_Mayhem_(PlayStation_2,_GameCube,_Xbox)" target="_blank" rel="noopener">Console</a>
+                </span>
+                <br>
+
+                <!--- TAS Videos -->
+                <a href="https://tasvideos.org/" class="site-link" target="_blank" rel="noopener">
+                <img src="../images/site-images/tasvideos.png" alt="TASVideos" width="48" height="48"> <span>TASVideos</span> </a>
+
+                <span>
+                    <a href="https://tasvideos.org/3299M" target="_blank" rel="noopener">Game Boy Advance</a>
+                </span>
+
+                <p class="note"><strong>Note</strong>: If any links above aren't available, the links maybe broken or the pages may not exist yet.</p>
+            </div>
+
+        </section>
+
+        <!-- Guides -->
+        <section class="guide-box box">
+            <h2>Guides</h2>
+            <p>Coming soon.</p>
+        </section>
+
+        <!-- Resources -->
+        <section class="guide-box box">
+            <h2>Resources</h2>
+            <p>Coming soon.</p>
+        </section>
+
+        <!-- Videos -->
+        <section class="guide-box box">
+            <h2>Videos</h2>
+            <p>Coming soon.</p>
+        </section>
+
+    </main>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
